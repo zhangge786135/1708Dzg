@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhangge.mapper.SlideMapper">
+	
+	<!-- 查询最近添加的三条数据 -->
+	<select id="querySlide" resultType="Slide">
+	select * from cms_slide order by created desc limit 0,3
+	</select>
+
+	
+</mapper>
+
